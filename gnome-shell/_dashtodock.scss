@@ -1,0 +1,176 @@
+#dashtodockContainer {
+    StWidget {
+        background-color: transparent;
+    }
+
+    .app-well-app-running-dot {
+        background-color: #28a645;
+    }
+
+    #dash {
+        border-radius: 0;
+        border-color: transparent;
+    }
+
+    &.left #dash {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(57, 57, 57, 0.5);
+        background-gradient-end: rgba(37, 37, 37, 0.75);
+    }
+
+    &.right #dash {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(37, 37, 37, 0.75);
+        background-gradient-end: rgba(57, 57, 57, 0.5);
+    }
+
+    &.top #dash {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(57, 57, 57, 0.5);
+        background-gradient-end: rgba(37, 37, 37, 0.75);
+    }
+
+    &.bottom #dash {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(57, 57, 57, 0.5);
+        background-gradient-end: rgba(37, 37, 37, 0.75);
+    }
+
+    &.bottom #dash .app-well-app:hover {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: transparent;
+        background-gradient-end: rgba(0, 0, 0, 0.5);
+        padding: none;
+        margin: none;
+    }
+
+    &.bottom #dash .app-well-app:active {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: transparent;
+        background-gradient-end: rgba(0, 0, 0, 0.8);
+    }
+
+    &.top #dash .app-well-app:hover {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(0, 0, 0, 0.5);
+        background-gradient-end: transparent;
+    }
+
+    &.top #dash .app-well-app:active {
+        background: none;
+        background-color: none;
+        background-gradient-direction: vertical;
+        background-gradient-start: rgba(0, 0, 0, 0.8);
+        background-gradient-end: transparent;
+    }
+
+    &.left #dash .app-well-app:hover {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(0, 0, 0, 0.5);
+        background-gradient-end: transparent;
+    }
+
+    &.left #dash .app-well-app:active {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: rgba(0, 0, 0, 0.8);
+        background-gradient-end: transparent;
+    }
+
+    &.right #dash .app-well-app:hover {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: transparent;
+        background-gradient-end: rgba(0, 0, 0, 0.5);
+    }
+
+    &.right #dash .app-well-app:active {
+        background: none;
+        background-color: none;
+        background-gradient-direction: horizontal;
+        background-gradient-start: transparent;
+        background-gradient-end: rgba(0, 0, 0, 0.8);
+    }
+
+    /*&.running-dots .app-well-app.focused {
+      background-color: rgba(255,255,255,0.5)!important;
+    }*/
+
+    /* #dash .running1 .app-well-app-running-dot {
+        background-image: url("../assets/dash/running1-indicator.svg");
+    }
+    
+     #dash .running2 .app-well-app-running-dot {
+        background-image: url("../assets/dash/running2-indicator.svg");
+    }
+    
+     #dash .running3 .app-well-app-running-dot {
+        background-image: url("../assets/dash/running3-indicator.svg");
+    }
+    
+     #dash .running4 .app-well-app-running-dot {
+        background-image: url("../assets/dash/running4-indicator.svg");
+    }*/
+
+    &.extended #dash {
+        background-color: rgba(37, 37, 37, 0.55) !important;
+        background: none;
+        background-gradient-direction: none;
+        background-gradient-start: none;
+        background-gradient-end: none;
+        padding: none;
+        border-radius: 0;
+    }
+
+    &.extended #dash .app-well-app:hover {
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        background: none;
+        background-gradient-direction: none;
+        background-gradient-start: none;
+        background-gradient-end: none;
+    }
+
+    &.extended #dash .app-well-app:active {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        background: none;
+        background-gradient-direction: none;
+        background-gradient-start: none;
+        background-gradient-end: none;
+    }
+
+    &.top .dash-item-container > StWidget,
+    &.bottom .dash-item-container > StWidget,
+    &.extended.top .dash-item-container > StWidget,
+    &.extended.bottom .dash-item-container > StWidget {
+        padding: 5px 3px;
+    }
+
+    &.left .dash-item-container > StWidget,
+    &.right .dash-item-container > StWidget,
+    &.extended.left .dash-item-container > StWidget,
+    &.extended.right .dash-item-container > StWidget {
+        padding: 3px 5px;
+    }
+
+    /*&.bottom .dash-item-container {
+      margin: 0 5px;
+    }*/
+}
